@@ -1,0 +1,18 @@
+<template name="viewLogin">
+	<div class="center_div" >
+		<form class="login">
+			<div><h3>Cyber Mantra Administrator</h3></div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Username</label>
+		    <input type="text" class="form-control" name="username" placeholder="username">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" name="password" placeholder="Password">
+		  </div>
+		  
+		  <button type="submit" value="login" class="btn btn-default">Login</button>
+		  <a href="{{pathFor 'viewRegister'}}">&nbsp;&nbsp;&nbsp;register</a>
+		</form>
+	</div>
+</template>

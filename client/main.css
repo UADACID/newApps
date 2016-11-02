@@ -1,1 +1,6 @@
-/* CSS declarations go here */
+.center_div{
+    margin: 0 auto;
+    width:50% ;
+    margin-top: 50px
+    /* value of your choice which suits your alignment */
+}
