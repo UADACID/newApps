@@ -1,5 +1,21 @@
 <template name="web">
-	<div>
-		ini halaman depan user
-	</div>
+	<div class="container">
+    <!-- <header class="navbar navbar-default" role="navigation"> 
+	  <div class="navbar-header">
+	    <a class="navbar-brand" href="{{pathFor 'postsList'}}">{{pageTitle}}</a>
+	  </div>
+	</header> -->
+	<!-- {{#if currentUser}}
+	{{> navbar}}
+	{{/if}} -->
+	<!-- <div class="well" align="right">
+		{{> loginButtons}}
+	</div> -->
+	<!-- {{> loginButtons}} -->
+    <div id="main">
+   <!--  {{#if currentUser}} -->
+      {{> yield}}
+      <!-- {{/if}} -->
+    </div>
+  </div>
 </template>
