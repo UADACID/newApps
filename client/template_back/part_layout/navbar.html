@@ -28,7 +28,8 @@
         </ul>
         {{/if}}
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" class="logout">Logout</a></li>
+        <li><a href="{{pathFor 'viewFront'}}" target="_blank">Look at Front</a></li>
+          <li><a href="#" class="logout" onClick="confirm('Anda Yakin ?')">Logout</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
