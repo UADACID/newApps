@@ -1,7 +1,7 @@
 Template.viewService.helpers({
-	service: function () {
-		return Service.find();
-	}
+	service: function() {
+    return Service.find({}, {sort: {submitted: -1}});
+  }
 });
 
 Template.viewService.events({

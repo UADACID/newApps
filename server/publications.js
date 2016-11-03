@@ -7,3 +7,6 @@ Meteor.publish('client', function(){
 Meteor.publish('service', function(){
 	return Service.find();
 })
+Meteor.publish('contact', function(){
+	return Contact.find();
+})

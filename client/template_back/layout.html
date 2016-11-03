@@ -10,9 +10,11 @@
 	{{/if}}
 	<!-- {{> loginButtons}} -->
     <div id="main">
+    {{#transition wrap="true" in="zoomIn:100" out="fadeOut:200"}}
    <!--  {{#if currentUser}} -->
       {{> yield}}
       <!-- {{/if}} -->
+      {{/transition}}
     </div>
   </div>
 </template>

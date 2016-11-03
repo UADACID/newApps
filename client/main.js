@@ -1,5 +1,6 @@
 Meteor.subscribe('about');
 Meteor.subscribe('service');
+Meteor.subscribe('contact');
 
 // import { Template } from 'meteor/templating';
 // import { ReactiveVar } from 'meteor/reactive-var';
