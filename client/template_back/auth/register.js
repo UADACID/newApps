@@ -9,7 +9,9 @@ Template.viewRegister.events({
 		    password: password
 		}, function(error){
 		    if(error){
-		        console.log(error.reason); // Output error if registration fails
+		        // console.log(error.reason);
+		        throwError(error.reason); 
+		        // Output error if registration fails
 		    } else {
 		        Router.go("dashboard"); // Redirect user if registration succeeds
 		    }

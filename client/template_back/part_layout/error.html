@@ -1,0 +1,16 @@
+<template name="errors">
+  <div class="errors">
+  {{#transition in="zoomIn" out="bounceOut"}}
+    {{#each errors}}
+      {{> error}}
+    {{/each}}
+    {{/transition}}
+  </div>
+</template>
+
+<template name="error">
+  <div class="alert alert-danger" role="alert">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{message}}
+  </div>
+</template>

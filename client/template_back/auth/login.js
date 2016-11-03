@@ -6,7 +6,8 @@ Template.viewLogin.events({
        
        	Meteor.loginWithPassword(username, password, function(error){
 		    if(error){
-		        console.log(error.reason);
+		        // console.log(error.reason);
+		        throwError(error.reason);
 		    } else {
 		        Router.go("dashboard");
 		    }
