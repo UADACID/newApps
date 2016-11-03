@@ -8,9 +8,14 @@ Template.addClient.events({
 			};
 
 			//console.log(post);
-			post._id = Client.insert(post);
-			Router.go('viewClient',post);
-		
+			// post._id = Client.insert(post);
+			Meteor.call('clientInsert', post, function(error, result){
+
+				if(error)
+					return alert(error.reason);
+				
+				Router.go('viewClient', {_id: result._id});
+		});
 		
 	}
 });

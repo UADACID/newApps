@@ -4,3 +4,6 @@ Meteor.publish('about', function(){
 Meteor.publish('client', function(){
 	return Client.find();
 });
+Meteor.publish('service', function(){
+	return Service.find();
+})

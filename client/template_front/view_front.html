@@ -84,10 +84,7 @@
 						Visi
 					</h2>
 					<p>
-						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					</p>
-					<p>
-						<a class="btn" href="#">View details »</a>
+						{{about.visi}}
 					</p>
 				</div>
 				<div class="col-md-6">
@@ -95,10 +92,7 @@
 						Misi
 					</h2>
 					<p>
-						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					</p>
-					<p>
-						<a class="btn" href="#">View details »</a>
+						{{about.misi}}
 					</p>
 				</div>
 			</div>
@@ -110,39 +104,16 @@
 				Service
 			</h3>
 			<div class="row">
+			{{#each service}}
 				<div class="col-md-4">
 					<h2 align="center" style="margin-bottom:30px">
-						WEB
+						{{judul}}
 					</h2>
 					<p>
-						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					</p>
-					<p>
-						<a class="btn" href="#">View details »</a>
+						{{deskripsi}}
 					</p>
 				</div>
-				<div class="col-md-4">
-					<h2 align="center" style="margin-bottom:30px">
-						MOBILE
-					</h2>
-					<p>
-						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					</p>
-					<p>
-						<a class="btn" href="#">View details »</a>
-					</p>
-				</div>
-				<div class="col-md-4">
-					<h2 align="center" style="margin-bottom:30px">
-						NETWORK
-					</h2>
-					<p>
-						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					</p>
-					<p>
-						<a class="btn" href="#">View details »</a>
-					</p>
-				</div>
+				{{/each}}
 			</div>
 		</div>
 	</div>
@@ -152,27 +123,13 @@
 				Client
 			</h3>
 			<div class="row">
-				<div class="col-xs-12 col-sm-3">
-
-					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" />
-					<h4>sample</h4>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,</p>
-				</div>
+			{{#each client}}
 				<div class="col-xs-12 col-sm-3">
 					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" />
-					<h4>sample</h4>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,</p>
+					<h4>{{nama}}</h4>
+					<p>{{deskripsi}}</p>
 				</div>
-				<div class="col-xs-12 col-sm-3">
-					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" />
-					<h4>sample</h4>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,</p>
-				</div>
-				<div class="col-xs-12 col-sm-3">
-					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" />
-					<h4>sample</h4>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,</p>
-				</div>
+			{{/each}}
 			</div>
 		</div>
 	</div>
@@ -193,15 +150,15 @@
 <script type="text/javascript">
 	$('a[href^="#"]').on('click', function(event) {
 
-    var target = $(this.getAttribute('href'));
+	    var target = $(this.getAttribute('href'));
 
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').stop().animate({
+	            scrollTop: target.offset().top
+	        }, 1000);
+	    }
 
-});
+	});
 </script>
 </template>

@@ -7,7 +7,7 @@
 
 Template.viewAbout.helpers({
 	about : function(){
-		return About.find();
+		return About.findOne();
 	},
 	cekAbout : function(){
 		return About.find().count() === 0;
