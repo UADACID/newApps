@@ -8,3 +8,7 @@ simple profile company
 -CRUD client http://localhost:3000/admin/client
 
 -CRUD service http://localhost:3000/admin/service
+
+http://www.example.com
+
+https://www.example.com
